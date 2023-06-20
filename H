@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  int E, P = 1, B, cont = 1;
+
+    printf("Escolha o valor da base: ");
+    scanf("%d", &B);
+    printf("Escolha o valor do expoente: ");
+    scanf("%d", &E);
+  
+  while(cont <= E) {
+    cont++;
+    P *= B;
+  }
+  printf("O valor da potência é: %d", P);
+  return 0;
+}
