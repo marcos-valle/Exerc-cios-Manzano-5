@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+  int M, n = 5, i;
+
+  for(i = 1; i <= 10; i++){
+    M = n * i;
+    printf("%d * %d = %d\n", n, i, M);
+  }
+  return 0;
+}
