@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+  int E, P = 1;
+
+  for (E = 0; E <= 15; E++){
+    P *= 3;
+    printf("%d\n", P);
+  }
+  
+  return 0;
+}
