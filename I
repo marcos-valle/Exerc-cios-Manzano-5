@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int ATUAL = 0, ANTERIOR = 1, PROXIMO, i;
+
+  for(i = 0; i <= 20; i++){
+    printf("%d\n", ATUAL);
+    PROXIMO = ANTERIOR + ATUAL;
+    ANTERIOR = ATUAL;
+    ATUAL = PROXIMO;
+  }
+
+  return 0;
+}
