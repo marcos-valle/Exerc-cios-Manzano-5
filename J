@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int C, F, cont;
+
+  for(C = 10; C <= 100; C+=10){
+      F = (C * 9 / 5) + 32;
+    printf("O valor em Celsius é: %d\n", C);
+    printf("O valor em Fahrenheit é: %d\n\n", F);
+  }
+
+  return 0;
+}
