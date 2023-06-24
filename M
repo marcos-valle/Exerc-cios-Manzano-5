@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+
+    float n, m, s = 0, i;
+
+    for ( i = 1; i <= 10; i++){
+        printf("Digite um numero: ");
+        scanf("%f", &n);
+      s += n;
+      m = s / 10;
+    }
+  
+  printf("soma: %.2f\n", s);
+  printf("média: %.2f", m);
+
+    return 0;
+}
