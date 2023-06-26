@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+
+  int n, i, q;
+
+  for (n = 15; n <= 200; n += 3){
+
+    printf("O quadrado de %d é: %d\n", n, (n * n));
+  }
+  
+ return 0;
+}
