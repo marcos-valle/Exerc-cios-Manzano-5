@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+
+  int c = 0, dividendo, divisor;
+
+  printf("Digite os valores do divisor: ");
+  scanf("%d", &divisor);
+  printf("Digite os valores do dividendo: ");
+  scanf("%d", &dividendo);
+
+  while (dividendo >= divisor){
+    dividendo -= divisor;
+    c++;
+  }
+
+  printf("Quociente: %d", c);
+  
+ return 0;
+}
