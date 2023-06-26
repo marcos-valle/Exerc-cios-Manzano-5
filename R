@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+  
+  int valor, menor, maior;
+
+  printf("Digite um valor positivo (ou um negativo para sair): ");
+  scanf("%d", &valor);
+
+  maior = valor;
+  menor = valor;
+  
+  while(valor >= 0){
+    if(valor > maior){
+      maior = valor;
+    }
+    if (valor < menor){
+      menor = valor;
+    }
+
+    printf("Digite um valor positivo (ou um negativo para sair): ");
+    scanf("%d", &valor);
+  }
+  printf("Menor valor: %d\n", menor);
+  printf("Maior valor: %d", maior);
+  
+ return 0;
+}
