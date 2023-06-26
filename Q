@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+  
+  char nome[100];
+  int area, larg, comp, resp, soma = 0;
+
+  do
+  {
+    printf("nome do cômodo: ");
+    scanf("%s", nome);
+    printf("largura: ");
+    scanf("%d", &larg);
+    printf("comprimento: ");
+    scanf("%d", &comp);
+
+    area = larg * comp;
+
+    printf("área: %d\n", area);
+
+    printf("Digite '1' para continuar e '0' para sair: ");
+    scanf("%d", &resp);
+    soma += area;
+    
+  } while (resp == 1);
+
+  printf("área total: %d", soma);
+  
+ return 0;
+}
